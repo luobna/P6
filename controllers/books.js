@@ -36,6 +36,7 @@ exports.createBooks = async (req, res, next) => {
     await books.save();
     res.status(201).json({ message: 'Book saved successfully!' });
   } catch (error) {
+    console.error("Détails de l'erreur :", error); 
     res.status(500).json({ error: "Erreur lors de l'optimisation de l'image." });
   }
 };
