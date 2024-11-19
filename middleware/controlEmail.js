@@ -1,5 +1,6 @@
 const validator = require('validator')
 
+//Si l'utilisateur saissie un mail valide
 module.exports = (req, res, next) => {
     const {email} = req.body;
     if(validator.isEmail(email)) next() 

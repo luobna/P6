@@ -8,7 +8,6 @@ const booksRoutes = require ('./routes/books')
 const userRoutes  = require ('./routes/user')
 const path = require('path');
 
-console.log(process.env.PORT)
 
 mongoose.connect(process.env.mongodb)
   .then(() => console.log('Connexion à MongoDB réussie !'))

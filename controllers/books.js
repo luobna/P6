@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 const  Books = require ('../models/Books')
 
-
+//Gestion complète des livres
 
 exports.createBooks = async (req, res, next) => {
   const booksObject = JSON.parse(req.body.book);
